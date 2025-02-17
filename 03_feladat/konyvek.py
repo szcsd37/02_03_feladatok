@@ -40,3 +40,20 @@ for konyv in konyvek:
 
 print(f'3.3 feladat: A legjobb helyezést elért magyar könyv: {legjobb_konyv[0]}: {legjobb_konyv[4]}')
 
+def van_nemet_iro():
+    van_nemet = False
+    for konyv in konyvek:
+        if konyv[3] == 'német':
+            van_nemet = True
+            break
+    if van_nemet:
+        print(f'3.4. feladat: A listában szerepel német író könyve')
+    else:
+        print(f'3.4 feladat: A listában NEM szerepel német író könyve')
+
+def idosebb_90nel():
+
+
+konyvek_db()
+legjobb_magyar_konyv()
+van_nemet_iro()
